@@ -242,6 +242,7 @@
         }
         
     }else {
+        NSAssert(NO, @"需要配置plist文件Allow Arbitrary Loads = yes");
         NSLog(@"有错误---");
         self.state = GYDownLoaderStateFailed;
         if (self.downLoadfailure) {
